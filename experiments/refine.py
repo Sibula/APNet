@@ -5,7 +5,7 @@ import json
 import glob
 import argparse
 
-from dcase_models.data.datasets import UrbanSound8k
+from dcase_models.data.datasets import UrbanSound8k, TAUUrbanAcousticScenes2019
 from dcase_models.data.features import MelSpectrogram
 
 from dcase_models.data.data_generator import DataGenerator
@@ -32,7 +32,8 @@ available_features = {
 available_datasets = {
     'UrbanSound8k' :  UrbanSound8k,
     'MedleySolosDb' : MedleySolosDb,
-    'GoogleSpeechCommands' : GoogleSpeechCommands
+    'GoogleSpeechCommands' : GoogleSpeechCommands,
+    'TAUUrbanAcousticScenes2019' : TAUUrbanAcousticScenes2019
 }
 
 #def main():

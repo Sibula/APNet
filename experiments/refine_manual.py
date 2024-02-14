@@ -17,7 +17,7 @@ from plotly.subplots import make_subplots
 
 from dcase_models.util.gui import encode_audio
 from dcase_models.data.features import MelSpectrogram
-from dcase_models.data.datasets import UrbanSound8k
+from dcase_models.data.datasets import UrbanSound8k, TAUUrbanAcousticScenes2019
 
 from dcase_models.util.files import load_json, mkdir_if_not_exists, save_pickle, load_pickle
 from dcase_models.util.data import evaluation_setup
@@ -44,7 +44,8 @@ available_features = {
 available_datasets = {
     'UrbanSound8k' :  UrbanSound8k,
     'MedleySolosDb' : MedleySolosDb,
-    'GoogleSpeechCommands' : GoogleSpeechCommands
+    'GoogleSpeechCommands' : GoogleSpeechCommands,
+    'TAUUrbanAcousticScenes2019' : TAUUrbanAcousticScenes2019
 }
 
 # Define app

@@ -7,7 +7,7 @@ sys.path.append('../')
 
 # Datasets
 from apnet.datasets import MedleySolosDb, GoogleSpeechCommands
-from dcase_models.data.datasets import UrbanSound8k
+from dcase_models.data.datasets import UrbanSound8k, TAUUrbanAcousticScenes2019
 
 # Models
 from dcase_models.model.models import SB_CNN, MLP
@@ -36,7 +36,8 @@ available_features = {
 available_datasets = {
     'UrbanSound8k' :  UrbanSound8k,
     'MedleySolosDb' : MedleySolosDb,
-    'GoogleSpeechCommands' : GoogleSpeechCommands
+    'GoogleSpeechCommands' : GoogleSpeechCommands,
+    'TAUUrbanAcousticScenes2019' : TAUUrbanAcousticScenes2019
 }
 
 def main():
